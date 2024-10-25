@@ -30,12 +30,12 @@
 | 段寄存器     | Stack Segment       | ss    | ss    | ss    |
 | 段寄存器     | Extra Segment       | es    | es    | es    |
 
+** 内存
+
+** CPU
+
+* 编写一个汇编程序
 ** 汇编器
 1. AS
 2. NASM
 3. MASM
-
-* 编写一个汇编程序
-#+BEGIN_SRC asm
-
-#+END_SRC
