@@ -1,4 +1,4 @@
-#+TITLE: X86 汇编语言
+#+TITLE: [更新中] X86 汇编语言
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-10-25 Fri>
@@ -10,4 +10,3 @@
 | Timeline         | Topic        | Note | Video |
 |------------------+--------------+------+-------|
 | <2024-10-25 Fri> | 汇编语言引入 | [[file:n01-basic-intro.org][n01]]  |       |
-|                  | 更新中       |      |       |
