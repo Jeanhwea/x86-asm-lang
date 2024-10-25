@@ -1,0 +1,14 @@
+#+TITLE: X86 汇编语言
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-10-25 Fri>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* 课程大纲
+- 课程预计时间 <2024-05-06 Mon> 至 <2024-11-30 Sat>
+| Timeline         | Topic    | Slide & Note | Video |
+|------------------+----------+--------------+-------|
+| <2024-10-25 Fri> | 基本介绍 |              |       |
+|                  | 更新中   |              |       |
