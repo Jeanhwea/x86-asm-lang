@@ -3,3 +3,6 @@ hello.out: hello.o
 
 hello.o: hello.s
 	nasm -f elf -o hello.o hello.s
+
+clean:
+	-rm *.out *.o
