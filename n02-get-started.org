@@ -41,3 +41,4 @@
 1. 管理项目工具
 
 * 配置工程
+1. copy.sh | [[https://copy.sh/v86/?profile=archlinux][emu]]
