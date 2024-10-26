@@ -1,4 +1,4 @@
-; code02
+; code03
 
 section .text
 	global _start
