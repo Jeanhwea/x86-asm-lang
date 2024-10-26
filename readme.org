@@ -13,5 +13,5 @@
 | Timeline         | Topic        | Note | Video |
 |------------------+--------------+------+-------|
 | <2024-10-25 Fri> | 汇编语言引入 | [[file:n01-basic-intro.org][n01]]  | [[https://www.bilibili.com/video/BV147yDYzETr/][v01]]   |
-| <2024-10-26 Sat> | 动手编写程序 | [[file:n02-get-started.org][n02]]  |       |
+| <2024-10-26 Sat> | 动手编写程序 | [[file:n02-get-started.org][n02]]  | [[https://www.bilibili.com/video/BV1w31xYhETj/][v02]]   |
 |                  |              |      |       |
