@@ -7,7 +7,7 @@
 
 
 * 课程链接
-1. 课程主页 | [[https://github.com/Jeanhwea/x86-asm-lang][github]]
+1. 课程主页 | [[https://github.com/Jeanhwea/x86-asm-lang][github]] | [[https://gitee.com/jeanhwea/x86-asm-lang][gitee]]
 
 * 课程大纲
 | Timeline         | Topic        | Note | Video |
