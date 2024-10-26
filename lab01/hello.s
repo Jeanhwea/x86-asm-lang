@@ -5,14 +5,14 @@ section .text
 	global _start
 
 _start:
-	; write the string to stdout
-	mov eax, 4         ; system call number for sys_write
-	mov ebx, 1         ; file descriptor 1 is stdout
-	mov ecx, hello     ; pointer to the message
-	mov edx, 14        ; length of the message
-	int 0x80           ; interrupt to invoke system call
+	; 调用 write() 系统调用输出字符串
+	mov eax, 4         ; write() 系统调用编号
+	mov ebx, 1         ; 输出文件描述符, 1 表示标准输出
+	mov ecx, hello     ; 字符串首地址
+	mov edx, 14        ; 字符串长度
+	int 0x80           ; 系统调用的中断
 
-	; exit the program
-	mov eax, 1         ; system call number for sys_exit
-	xor ebx, ebx       ; exit code 0
-	int 0x80           ; interrupt to invoke system call
+	; 调用 exit() 系统调用退出程序
+	mov eax, 1         ; exit() 系统调用编号
+	xor ebx, ebx       ; exit() 的退出码
+	int 0x80           ; 系统调用的中断
