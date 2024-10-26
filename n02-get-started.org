@@ -1,0 +1,41 @@
+#+TITLE: 动手编写程序
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-10-26 Sat>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* 调试工具
+** 安装
+#+BEGIN_SRC sh
+  apt install nasm gdb
+#+END_SRC
+
+** nasm
+汇编器编译程序
+#+BEGIN_SRC sh
+  nasm -f elf -o hello.o hello.s
+#+END_SRC
+
+链接器链接程序
+#+BEGIN_SRC sh
+  ld -m elf_i386 -o hello.out hello.o
+#+END_SRC
+
+** gdb
+1. 启动配置文件 ~.gdbinit~
+   #+BEGIN_SRC sh
+     break _start
+     run
+     set disassembly-flavor intel
+     # set disassemble-next-line on
+     layout asm
+     layout reg
+   #+END_SRC
+2. 常用指令
+   - p 查看变量/表达式
+   - x 查看内存
+
+** make
+1. 管理项目工具
