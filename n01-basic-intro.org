@@ -1,4 +1,4 @@
-#+TITLE: 第一讲：基础介绍
+#+TITLE: 第一讲：汇编语言引入
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-10-25 Fri>

@@ -1,4 +1,4 @@
-#+TITLE: 动手编写程序
+#+TITLE: 第二讲：动手编写程序
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
 #+DATE: <2024-10-26 Sat>
@@ -41,4 +41,6 @@
 1. 管理项目工具
 
 * 配置工程
+
+* 在线工具
 1. copy.sh | [[https://copy.sh/v86/?profile=archlinux][emu]]
