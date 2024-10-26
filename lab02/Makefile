@@ -12,4 +12,4 @@ all: $(OUTS)
 	ld -m elf_i386 -o $@ $<
 
 clean:
-	-rm *.out *.o
+	-rm -f *.out *.o
