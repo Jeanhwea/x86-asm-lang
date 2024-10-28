@@ -1,7 +1,9 @@
+set disassembly-flavor intel
+# set disassembly-flavor att
+set disassemble-next-line on
+
 break _start
 run
-# set disassembly-flavor att
-set disassembly-flavor intel
-# set disassemble-next-line on
+
 layout asm
 layout reg
