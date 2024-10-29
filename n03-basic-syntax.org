@@ -1,0 +1,14 @@
+#+TITLE: 第三讲：基本汇编语法
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-10-29 Tue>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* Basic Instruction
+
+* Directive 指令
+#+BEGIN_SRC asm
+  symbol equ 128
+#+END_SRC
