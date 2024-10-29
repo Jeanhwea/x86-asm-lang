@@ -7,8 +7,24 @@
 
 
 * Basic Instruction
+#+BEGIN_SRC asm
+  mov dest, src	; move src to desc
+  mov eax, 4		; 将立即数 (immidiate) 存入到 eax 寄存器中
+  mov bx, ax          ; bx = ax
+  add eax, 4		; eax = eax + 4
+  sub ebx, edi	; ebx = ebx - edi
+  inc ecx		; ecx++
+#+END_SRC
 
 * Directive 指令
-#+BEGIN_SRC asm
-  symbol equ 128
-#+END_SRC
+1. 定义常量
+   #+BEGIN_SRC asm
+     symbol equ 128
+   #+END_SRC
+2. 定义内存
+   #+BEGIN_SRC asm
+     L1 db 0				; 定义一个字节, 并初始化为 0
+     L2 dw 0				; 定义一个字 (word), 并初始化为 0
+     L3 resb 4			; 预留 4 个字节
+     L4 times 100 db 1		; 100 次定义字节, 初始化成 1
+   #+END_SRC
