@@ -20,11 +20,13 @@
 1. 定义常量
    #+BEGIN_SRC asm
      symbol equ 128
+     aaa equ 8
+     %define SIZE 128
    #+END_SRC
 2. 定义内存
    #+BEGIN_SRC asm
      L1 db 0				; 定义一个字节, 并初始化为 0
-     L2 dw 0				; 定义一个字 (word), 并初始化为 0
+     L2 dw0				; 定义一个字 (word), 并初始化为 0
      L3 resb 4			; 预留 4 个字节
      L4 times 100 db 1		; 100 次定义字节, 初始化成 1
    #+END_SRC
@@ -32,7 +34,7 @@
 * Big endian / Little endian
 1. 大端存储 (big endian)
    - 字节序 0x01020304
-   - 内存序 0x01020304
+   - 内存序 01 02 03 04
 2. 小端存储 (little endian)
    - 字节序 0x01020304
-   - 内存序 0x04030201
+   - 内存序 04 03 02 01
