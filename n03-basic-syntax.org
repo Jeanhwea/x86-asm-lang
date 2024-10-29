@@ -28,3 +28,11 @@
      L3 resb 4			; 预留 4 个字节
      L4 times 100 db 1		; 100 次定义字节, 初始化成 1
    #+END_SRC
+
+* Big endian / Little endian
+1. 大端存储 (big endian)
+   - 字节序 0x01020304
+   - 内存序 0x01020304
+2. 小端存储 (little endian)
+   - 字节序 0x01020304
+   - 内存序 0x04030201
