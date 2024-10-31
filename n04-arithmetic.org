@@ -16,9 +16,9 @@
    - imul 有符号
    - 示例
      #+BEGIN_SRC asm
-       ; imul (r/imm32)
+       ; imul reg
        ; result:
-       ;    edx:eax <- eax * (r/imm32)
+       ;    edx:eax <- eax * reg
        mul reg/imm32
      #+END_SRC
 2. 除
@@ -26,10 +26,10 @@
    - idiv 有符号
    - 示例
      #+BEGIN_SRC asm
-       ; idiv (r/imm32)
-       ;    edx:eax / (r/imm32)
+       ; idiv reg
+       ;    edx:eax / reg
        ; result:
-       ;    eax <- quotient
-       ;    edx <- remainder
+       ;    eax <- quotient商
+       ;    edx <- remainder 余数
        idiv reg/imm32
      #+END_SRC
