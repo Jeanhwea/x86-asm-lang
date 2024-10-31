@@ -1,6 +1,5 @@
 ; code03
 
-
 section .data
 	L1 db 1, 2, 3, 4
 
