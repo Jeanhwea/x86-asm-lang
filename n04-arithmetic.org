@@ -1,0 +1,35 @@
+#+TITLE: 整数运算
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-10-31 Thu>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
+
+
+* 加法和减法
+1. 加 add
+2. 减 sub
+
+* 乘法和除法
+1. 乘
+   - mul 无符号
+   - imul 有符号
+   - 示例
+     #+BEGIN_SRC asm
+       ; imul (r/imm32)
+       ; result:
+       ;    edx:eax <- eax * (r/imm32)
+       mul reg/imm32
+     #+END_SRC
+2. 除
+   - div 无符号
+   - idiv 有符号
+   - 示例
+     #+BEGIN_SRC asm
+       ; idiv (r/imm32)
+       ;    edx:eax / (r/imm32)
+       ; result:
+       ;    eax <- quotient
+       ;    edx <- remainder
+       idiv reg/imm32
+     #+END_SRC
