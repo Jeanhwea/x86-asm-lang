@@ -1,5 +1,3 @@
-; add.s
-
 segment .text
 	global _start
 

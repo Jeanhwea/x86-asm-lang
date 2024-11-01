@@ -1,5 +1,3 @@
-; code01
-
 section .data
 	hello db 'Hello, World!', 10, 0
 
