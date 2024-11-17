@@ -38,3 +38,8 @@
 | JNC  | branch only if CF=0 |
 | JP   | branch only if PF=1 |
 | JNP  | branch only if PF=0 |
+
+一些跳转的变种新形势
+- SHORT 限制在 128 字节
+- NEAR 大概限制在 32000 字节
+- FAR 基本上只用于实模式切换保护模式
