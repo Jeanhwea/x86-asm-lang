@@ -6,6 +6,35 @@
 #+OPTIONS: ^:nil
 
 
-* 比较
+* 比较 compare
+#+BEGIN_SRC nasm
+  cmp a, b
+#+END_SRC
 
-* 分支
+- 计算 a-b 的值
+- 对于无符号数字计算，存在以下场景: ZF(Zero Flag), CF(Carry Flag)
+  1. a=b => ZF=1, CF=0
+  2. a>b => ZF=0, CF=1
+  3. a<b => ZF=0, CF=0
+- 对于有符号数字计算，存在以下场景: ZF(Zero Flag), OF(Overflow Flag), SF(Sign Flag)
+  1. a=b => ZF=1
+  2. a>b => ZF=0, OF = SF
+  3. a<b => ZF=0, OF <> SF
+
+* 分支 branch
+#+BEGIN_SRC nasm
+  jmp label
+#+END_SRC
+
+| 指令 | 条件                |
+|------+---------------------|
+| JZ   | branch only if ZF=1 |
+| JNZ  | branch only if ZF=0 |
+| JO   | branch only if OF=1 |
+| JNO  | branch only if OF=0 |
+| JS   | branch only if SF=1 |
+| JNS  | branch only if SF=0 |
+| JC   | branch only if CF=1 |
+| JNC  | branch only if CF=0 |
+| JP   | branch only if PF=1 |
+| JNP  | branch only if PF=0 |
