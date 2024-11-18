@@ -1,10 +1,28 @@
 #+TITLE: 控制流
 #+AUTHOR: Jinghui Hu
 #+EMAIL: hujinghui@buaa.edu.cn
-#+DATE: <2024-11-17 Sun>
+#+DATE: <2024-11-18 Mon>
 #+STARTUP: overview num indent
 #+OPTIONS: ^:nil
 
+
+* 例子
+#+BEGIN_SRC c
+  if (eax == 0) {
+    ebx = 11
+  } else {
+    ebx = 22
+  }
+#+END_SRC
+
+#+BEGIN_SRC c
+  int sum = 0;
+  for (int i = 0; i < 100; i++ 0) {
+     sum += i+1;
+  }
+#+END_SRC
+
+goto 语句
 
 * eflag 寄存器
 |   Bit | Label | Description                   |
@@ -60,10 +78,12 @@
 | JP   | branch only if PF=1 |
 | JNP  | branch only if PF=0 |
 
-一些跳转的变种新形势
+一些跳转的变种新形式
 - SHORT 限制在 128 字节
 - NEAR 大概限制在 32000 字节
 - FAR 基本上只用于实模式切换保护模式
+
+JE/JL/JNL
 
 * 循环 loop
 1. loop
