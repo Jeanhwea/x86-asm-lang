@@ -35,8 +35,8 @@
 - 计算 a-b 的值
 - 对于无符号数字计算，存在以下场景: ZF(Zero Flag), CF(Carry Flag)
   1. a=b => ZF=1, CF=0
-  2. a>b => ZF=0, CF=1
-  3. a<b => ZF=0, CF=0
+  2. a>b => ZF=0, CF=0
+  3. a<b => ZF=0, CF=1
 - 对于有符号数字计算，存在以下场景: ZF(Zero Flag), OF(Overflow Flag), SF(Sign Flag)
   1. a=b => ZF=1
   2. a>b => ZF=0, OF = SF
@@ -64,3 +64,11 @@
 - SHORT 限制在 128 字节
 - NEAR 大概限制在 32000 字节
 - FAR 基本上只用于实模式切换保护模式
+
+* 循环 loop
+1. loop
+   - ecx--, jump LABEL if ecx <> 0
+2. loope, loopz
+   - ecx--(但是不修改 eflags), jump LABEL if ecx <> 0 && ZF=1
+3. loopne, loopnz
+   - ecx--(但是不修改 eflags), jump LABEL if ecx <> 0 && ZF=0
