@@ -17,3 +17,4 @@
 | <2024-10-29 Tue> | 基本汇编语法 | [[file:n03-basic-syntax.org][n03]]  | [[https://www.bilibili.com/video/BV1z5S8YUEXN/][v03]]   |
 | <2024-10-31 Thu> | 整数运算介绍 | [[file:n04-arithmetic.org][n04]]  | [[https://www.bilibili.com/video/BV1Y5SHY2Ep1/][v04]]   |
 | <2024-11-01 Fri> | 写一个计算题 |      | [[https://www.bilibili.com/video/BV1MTSoYuEme/][v05]]   |
+| <2024-11-18 Mon> | 控制流       | [[file:n06-control-flow.org][n06]]  |       |
