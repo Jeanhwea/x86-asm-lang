@@ -6,7 +6,7 @@
 #+OPTIONS: ^:nil
 
 * 回顾控制流
-** if 条件
+** if 条件控制流
 #+BEGIN_SRC c
   if (eax == 0) {
       ebx = 100;
