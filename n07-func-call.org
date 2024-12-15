@@ -1,0 +1,6 @@
+#+TITLE: 函数调用
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-12-15 Sun>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
