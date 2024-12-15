@@ -28,53 +28,53 @@
 ** 常见 c 语言控制流伪代码和汇编对应关系
 1. if 条件语句
    - 伪代码
-     #+BEGIN_SRC c
-       if (condition) {
-           then_block;
-       } else {
-           else_block;
-       }
-     #+END_SRC
+#+BEGIN_SRC c
+  if (condition) {
+      then_block;
+  } else {
+      else_block;
+  }
+#+END_SRC
    - 汇编
-     #+BEGIN_SRC nasm
-                   ; 设置 eflag 来控制条件
-                   jxx  else_block  ; 如果条件为假则跳转 else_block
-                   ; then_block 部分逻辑
-                   jmp  endif       ; 跳出条件
-       else_block:
-                   ; else_block 部分逻辑
-       endif:
-     #+END_SRC
+#+BEGIN_SRC nasm
+              ; 设置 eflag 来控制条件
+              jxx  else_block  ; 如果条件为假则跳转 else_block
+              ; then_block 部分逻辑
+              jmp  endif       ; 跳出条件
+  else_block:
+              ; else_block 部分逻辑
+  endif:
+#+END_SRC
 2. while 循环语句
    - 伪代码
-     #+BEGIN_SRC c
-       while (condition) {
-           while_body;
-       }
-     #+END_SRC
+#+BEGIN_SRC c
+  while (condition) {
+      while_body;
+  }
+#+END_SRC
    - 汇编
-     #+BEGIN_SRC nasm
-       startwhile:
-                   ; 设置 eflag 来控制条件
-                   jxx  endwhile   ; 如果条件为假则跳转 endwhile
-                   ; while_body 执行体
-                   jmp  startwhile ; 跳到 while 起始点
-       endwhile:
-     #+END_SRC
+#+BEGIN_SRC nasm
+  startwhile:
+              ; 设置 eflag 来控制条件
+              jxx  endwhile   ; 如果条件为假则跳转 endwhile
+              ; while_body 执行体
+              jmp  startwhile ; 跳到 while 起始点
+  endwhile:
+#+END_SRC
 3. do-while 循环语句
    - 伪代码
-     #+BEGIN_SRC c
-       do {
-           while_body;
-       } while (condition);
-     #+END_SRC
+#+BEGIN_SRC c
+  do {
+      while_body;
+  } while (condition);
+#+END_SRC
    - 汇编
-     #+BEGIN_SRC nasm
-       do:
-                   ; while_body 执行体
-                   ; 设置 eflag 来控制条件
-                   jxx  do   ; 如果条件为真则跳转 do
-     #+END_SRC
+#+BEGIN_SRC nasm
+  do:
+              ; while_body 执行体
+              ; 设置 eflag 来控制条件
+              jxx  do   ; 如果条件为真则跳转 do
+#+END_SRC
 
 * 函数调用
 ** call/ret
