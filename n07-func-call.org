@@ -19,8 +19,28 @@
           cmp  eax, 0    ; 如果 eax-0 等于零, 设置 ZF
           jz   then      ; 如果 ZF 设置则跳转 then
           mov  ebx, 200  ; else 部分逻辑
-          jmp  next      ; 跳出循环
+          jmp  next      ; 跳出条件部分
   then:
           mov  ebx, 100  ; then 里面包含的逻辑
   next:
 #+END_SRC
+
+** 常见控制流
+1. if 条件语句
+   - 伪代码
+     #+BEGIN_SRC c
+       if (condition) {
+           then_block;
+       } else {
+           else_block;
+       }
+     #+END_SRC
+   - 汇编
+     #+BEGIN_SRC nasm
+                   jxx  else_block  ; 如果条件为假则跳转 else_block
+                   ; then_block 部分逻辑
+                   jmp  endif       ; 跳出条件
+       else_block:
+                   ; else_block 部分逻辑
+       endif:
+     #+END_SRC
