@@ -4,3 +4,23 @@
 #+DATE: <2024-12-15 Sun>
 #+STARTUP: overview num indent
 #+OPTIONS: ^:nil
+
+* 回顾控制流
+** if 条件
+#+BEGIN_SRC c
+  if (eax == 0) {
+      ebx = 100;
+  } else {
+      ebx = 200;
+  }
+#+END_SRC
+
+#+BEGIN_SRC nasm
+          cmp  eax, 0		; 如果 eax-0=0, 设置 ZF
+          jz   thenblock		; 如果 ZF 设置则跳转 thenblock
+          mov  ebx, 200		; else 部分逻辑
+          jmp  next                     ; 跳出循环
+  thenblock:
+          mov  ebx, 100		; then 里面包含的逻辑
+  next:
+#+END_SRC
