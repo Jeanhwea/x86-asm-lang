@@ -75,3 +75,8 @@
                    ; 设置 eflag 来控制条件
                    jxx  do   ; 如果条件为真则跳转 do
      #+END_SRC
+
+* 函数调用
+** call/ret
+- call 调用函数
+- ret 函数返回
