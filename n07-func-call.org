@@ -80,3 +80,12 @@
 ** call/ret
 - call 调用函数
 - ret 函数返回
+
+#+BEGIN_SRC nasm
+  call func01
+
+
+  func01:
+          ; 函数体
+          ret
+#+END_SRC
