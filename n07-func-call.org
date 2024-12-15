@@ -16,11 +16,11 @@
 #+END_SRC
 
 #+BEGIN_SRC nasm
-          cmp  eax, 0		; 如果 eax-0 等于零, 设置 ZF
-          jz   thenblock		; 如果 ZF 设置则跳转 thenblock
-          mov  ebx, 200		; else 部分逻辑
-          jmp  next		; 跳出循环
-  thenblock:
-          mov  ebx, 100		; then 里面包含的逻辑
+          cmp  eax, 0    ; 如果 eax-0 等于零, 设置 ZF
+          jz   then      ; 如果 ZF 设置则跳转 then
+          mov  ebx, 200  ; else 部分逻辑
+          jmp  next      ; 跳出循环
+  then:
+          mov  ebx, 100  ; then 里面包含的逻辑
   next:
 #+END_SRC
