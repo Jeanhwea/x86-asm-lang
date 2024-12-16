@@ -1,18 +1,17 @@
 segment .text
 	global _start
 
+
+	; function adder(eax, ebx), return value: ebx
+adder:
+	add ebx, eax
+	ret
+
 _start:
-	mov eax, -3
-	mov ebx, 6
-	cmp eax, ebx
-	jz  L2
-L1:
-	mov ebx, 1
-	jmp L3
-L2:
-	mov ebx, 2
-L3:
+	mov eax, 10
+	mov ebx, 20
+	call adder
 
 	mov eax, 1
-	xor ebx, ebx
+	; xor ebx, ebx
 	int 0x80
