@@ -4,3 +4,9 @@
 #+DATE: <2024-12-16 Mon>
 #+STARTUP: overview num indent
 #+OPTIONS: ^:nil
+
+* 栈
+1. esp 指向栈的顶端
+2. ebp 指向栈的基地址
+3. push 操作时, esp = esp - 4, ebp 不变 (32b)
+4. pop 操作时,  esp = esp + 4, ebp 不变
