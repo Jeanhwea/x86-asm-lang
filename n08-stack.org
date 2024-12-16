@@ -1,0 +1,6 @@
+#+TITLE: 栈
+#+AUTHOR: Jinghui Hu
+#+EMAIL: hujinghui@buaa.edu.cn
+#+DATE: <2024-12-16 Mon>
+#+STARTUP: overview num indent
+#+OPTIONS: ^:nil
