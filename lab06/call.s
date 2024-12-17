@@ -1,17 +1,21 @@
 segment .text
 	global _start
 
-
-	; function adder(eax, ebx), return value: ebx
+	; 入参 eax, ebx
+	; 返回值 ecx
+	; 功能   ecx = eax + ebx
 adder:
-	add ebx, eax
+	add eax, ebx
+	mov ecx, eax
 	ret
 
+
 _start:
-	mov eax, 10
-	mov ebx, 20
+	mov eax, 11
+	mov ebx, 22
 	call adder
+	; ecx
 
 	mov eax, 1
-	; xor ebx, ebx
+	mov ebx, ecx
 	int 0x80
